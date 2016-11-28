@@ -1,0 +1,56 @@
+<html>
+   <head>
+      <title>ANGULAR II</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <base href="/">
+      <!-- 1. Ucitavamo biblioteke -->
+      <!-- IE required polyfills, in this exact order -->
+
+      <link rel="stylesheet" href="css/style.css">
+
+      <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+      <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+      <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>   
+      <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+      <script src="node_modules/systemjs/dist/system.src.js"></script>
+      <script src="node_modules/rxjs/bundles/Rx.js"></script>
+      <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+      <!-- Dodajemo http biblioteku -->
+      <script src="node_modules/angular2/bundles/http.dev.js"></script>
+      <!-- Dodajemo router biblioteku -->
+      <script src="node_modules/angular2/bundles/router.dev.js"></script>
+      <!-- Poslednji minifikovani Bootstrap CSS -->
+       <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+
+      <!-- Bootstrap tema -->
+
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+
+       <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+       <link href='https://fonts.googleapis.com/css?family=Cinzel:400,700' rel='stylesheet' type='text/css'>
+       <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+      <!-- Poslednji minifikovani JavaScript -->
+       <script src="node_modules/jquery/dist/jquery.js"></script>
+       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <!-- 2. Konfigurisemo SystemJS -->
+      <script>
+         System.config({
+           packages: {        
+             app: {
+               format: 'register',
+               defaultExtension: 'js'
+             }
+           }
+         });
+         System.import('app/main')
+               .then(null, console.error.bind(console));
+      </script>
+   </head>
+   <!-- 3. Prikazujemo aplikaciju -->
+   <body>
+         <moja-aplikacija>Loading...</moja-aplikacija>
+   </body>
+</html>

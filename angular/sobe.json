@@ -1,0 +1,32 @@
+[
+  {
+    "id": "56f582067ccdec13dd855ce6",
+    "name": "Soba 1",
+    "brojKreveta": "2",
+    "brojKvadrata": "30"
+  },
+  {
+    "id": "56f58206714fc1bdbedadde8",
+    "name": "Soba 2",
+    "brojKreveta": "3",
+    "brojKvadrata": "40"
+  },
+  {
+    "id": "56f58206688d48558b785851",
+    "name": "Soba 3",
+    "brojKreveta": "1",
+    "brojKvadrata": "20"
+  },
+  {
+    "id": "56f5820699db3339189cf1f3",
+    "name": "Soba 4",
+    "brojKreveta": "2",
+    "brojKvadrata": "30"
+  },
+  {
+    "id": "56f58206048e0928aec1cc54",
+    "name": "Soba 5",
+    "brojKreveta": "3",
+    "brojKvadrata": "40"
+  }
+]
